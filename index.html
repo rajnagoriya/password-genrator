@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>password generator </title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="container">
+        <div class="main">
+            <h1>password generator</h1>
+            <div class="upper">
+                <input type="text" placeholder="password" id="pass" readonly>
+                <button id="genrate" onclick= gen()>genrate</button>
+            </div>
+            <div class="lower">
+                <label for="range" id="rangeValue"></label>
+                <input type="range" id="range" max="20" min="6" onchange=range()>
+                <label for="number">number</label>
+                <input type="checkbox" id="number" >
+                <label for="chr">Special Symbole </label>
+                <input type="checkbox" id="chr" >
+            </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
